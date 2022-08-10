@@ -1,0 +1,30 @@
+
+body, h1, h2, h3, h4, h5, h6{
+    margin:0;
+    padding:0;
+}
+.site-container{
+    width: 100%;
+    max-width: 1175px;;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 0;
+    text-align:center;
+}
+
+.footer{
+    background-color: black;
+    color: #fff;
+    padding:8px 0;
+    text-align: center;
+}
+.footer p{
+    margin:0;
+}
+
+.student-table{
+    margin-top:15px;
+}
