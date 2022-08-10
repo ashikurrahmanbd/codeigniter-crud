@@ -18,6 +18,19 @@ class Student_model extends CI_Model {
         $this->db->query("DELETE FROM students WHERE s_id = '$id' ");
     }
 
+    //display record for updating
+    public function displayRecordsByID($id){
+        $query=$this->db->query("select * from students where s_id='".$id."'");
+	    return $query->result();
+    }
+
+    //update record
+    public function update_records($name, $dept, $cgpa, $id){
+        $query = $this->db->query("UPDATE students SET sname='$name', department='$dept', cgpa='$cgpa' WHERE s_id='$id' ");
+    }
+
+
+
 }
 
 

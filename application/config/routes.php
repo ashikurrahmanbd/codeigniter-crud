@@ -60,3 +60,4 @@ $route['insert-new-form'] = 'HomeController/insert_new_form';
 $route['insert-new'] = 'HomeController/insert_new';
 
 $route['delete-data'] = 'HomeController/delete_student';
+$route['update-data'] = 'HomeController/update_data';

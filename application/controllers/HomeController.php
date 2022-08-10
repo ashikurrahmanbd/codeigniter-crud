@@ -53,5 +53,31 @@ class HomeController extends CI_Controller {
 
 	}
 
+	// update data 
+	public function update_data(){
+		// load model
+		$this->load->model('Student_model');
+
+		$id = $this->input->get('id');
+
+		$result['data'] = $this->Student_model->displayRecordsByID($id);
+
+		$this->load->view('udpate_students_form', $result);
+
+
+		if($this->input->post('update')){
+
+			$name = $this->input->post('name');
+			$dept = $this->input->post('department');
+			$cgpa = $this->input->post('cgpa');
+
+			$this->Student_model->update_records($name, $dept, $cgpa, $id);
+
+			echo "updated successfullly";
+
+		}
+
+	}
+
 
 }

@@ -43,7 +43,7 @@
                         <td><?php echo $row->sname; ?></td>
                         <td><?php echo $row->department; ?></td>
                         <td><?php echo $row->cgpa; ?></td>
-                        <td> <a href="#">Edit</a>  | <a href="<?php echo base_url().'index.php' ?>/delete-data?id=<?php echo $row->s_id; ?>">Delete</a> </td>
+                        <td> <a href="<?php echo base_url().'index.php' ?>/update-data?id=<?php echo $row->s_id; ?>">Edit</a>  | <a href="<?php echo base_url().'index.php' ?>/delete-data?id=<?php echo $row->s_id; ?>">Delete</a> </td>
                     </tr>
 
                     <?php } ?>
