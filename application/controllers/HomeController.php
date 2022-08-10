@@ -13,4 +13,24 @@ class HomeController extends CI_Controller {
 
 		$this->load->view('home', $data);
 	}
+
+	public function insert_new_form(){
+		$this->load->view('insert_new_form');
+	}
+
+	public function insert_new(){
+		$this->load->model('student_model');
+
+		if($this->input->post('insert')){
+			$name = $this->input->post('name');
+			$dept = $this->input->post('department');
+			$cgpa = $this->input->post('cgpa');
+
+			$this->student_model->saverecords($name, $dept, $cgpa);
+			echo "Data has been saved successfully";
+		}
+
+		
+
+	}
 }

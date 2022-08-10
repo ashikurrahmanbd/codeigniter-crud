@@ -20,7 +20,9 @@
     </header>
     <div class="site-content">
         <div class="site-container">
-            <h3>All Student List</h3>
+
+            <h3 class="home-page-title">All Student List</h3>
+            <a href="<?php echo base_url().'index.php' ?>/insert-new-form">Insert New Student</a>
 
             <table class="table table-dark student-table">
                 <thead>
