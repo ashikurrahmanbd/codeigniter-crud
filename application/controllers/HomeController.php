@@ -72,8 +72,9 @@ class HomeController extends CI_Controller {
 			$cgpa = $this->input->post('cgpa');
 
 			$this->Student_model->update_records($name, $dept, $cgpa, $id);
-
-			echo "updated successfullly";
+			
+			redirect(base_url().'index.php/home');
+			
 
 		}
 
