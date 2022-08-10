@@ -58,3 +58,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['home'] = 'HomeController';
 $route['insert-new-form'] = 'HomeController/insert_new_form';
 $route['insert-new'] = 'HomeController/insert_new';
+
+$route['delete-data'] = 'HomeController/delete_student';

@@ -3,6 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class HomeController extends CI_Controller {
 
+	
+
 	public function index()
 	{
 
@@ -18,6 +20,7 @@ class HomeController extends CI_Controller {
 		$this->load->view('insert_new_form');
 	}
 
+	// insert function
 	public function insert_new(){
 		$this->load->model('student_model');
 
@@ -33,4 +36,22 @@ class HomeController extends CI_Controller {
 		
 
 	}
+
+
+	// delete a record from student table
+
+	public function delete_student(){
+
+		// load model
+		$this->load->model('Student_model');
+
+		$id = $this->input->get('id');
+
+		$this->Student_model->delete_records($id);
+
+		echo "data has been deleted";
+
+	}
+
+
 }
