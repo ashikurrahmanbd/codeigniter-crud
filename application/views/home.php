@@ -24,6 +24,12 @@
             <h3 class="home-page-title">All Student List</h3>
             <a href="<?php echo base_url().'index.php' ?>/insert-new-form">Insert New Student</a>
 
+            <form action="" method="get">
+                <input type="text" name="search_student_name">
+                <input type="submit" value="Search" name="student_search">
+            </form>
+            
+
             <table class="table table-dark student-table">
                 <thead>
                     <tr>

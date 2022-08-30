@@ -61,3 +61,8 @@ $route['insert-new'] = 'HomeController/insert_new';
 
 $route['delete-data'] = 'HomeController/delete_student';
 $route['update-data'] = 'HomeController/update_data';
+
+$route['get-data'] = 'AjaxController/getall_students';
+
+$route['ajax-search'] = 'AjaxController/ajax_search_view';
+$route['ajaxpro'] = 'AjaxController/ajaxPro';

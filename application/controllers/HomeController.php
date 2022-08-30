@@ -1,4 +1,5 @@
 <?php
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class HomeController extends CI_Controller {
@@ -80,5 +81,13 @@ class HomeController extends CI_Controller {
 
 	}
 
+	// ajax live search
+	public function get_from_home(){
+		if($this->input->get('student_search')){
+			$name = $this->input->get('search_student_name');
+		}
+		
+		
+	}
 
 }
